@@ -264,6 +264,11 @@ a:hover {
 .pages {
   text-align: center;
 }
+.text {
+  text-align: left;
+  align-items: left;
+  padding-bottom: 1em;
+}
 /* ==========================================
    DATE PICKER STYLE
    ========================================== */
@@ -777,22 +782,17 @@ section.content .box .icon i {
 }
 
 /* ==========================================
-   Ziele Section
+   Before Ziele Section Divider
    ========================================== */
 section#ziele::before {
   background: url(../img/zucchini-mit-bluete.jpg) no-repeat;
 }
-/* ==========================================
-   Aktuell Section
-   ========================================== */
-section#aktuell::before {
-  background: url(../img/radieschen.jpg) no-repeat;
-}
+
 /* ==========================================
    Planung Section
    ========================================== */
-section#aktuell::before {
-  background: url(../img/zucchini-mit-bluete.jpg) no-repeat;
+section#planung::before {
+  background: url(../img/vegetables.png) no-repeat;
 }
 /* ==========================================
    App Section

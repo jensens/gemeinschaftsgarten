@@ -222,10 +222,10 @@ $(document).ready(function () {
     // ---------------------------------------------- //
     // LEAFLET
     // ---------------------------------------------- //
-    var mymap = L.map('map').setView([47.2606774, 11.2631639,160], 17);
-    L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
-        maxZoom: 20,
-        subdomains:['mt0','mt1','mt2','mt3']
-    }).addTo(mymap);
+    // var mymap = L.map('map').setView([47.2606774, 11.2631639,160], 17);
+    // L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+    //     maxZoom: 20,
+    //     subdomains:['mt0','mt1','mt2','mt3']
+    // }).addTo(mymap);
 
 });

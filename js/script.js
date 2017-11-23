@@ -62,14 +62,14 @@ $(document).ready(function () {
     // ---------------------------------------------- //
     // Date picker initialization
     // ---------------------------------------------- //
-    $('#date').datepicker({
-        todayButton: new Date()
-    });
+    // $('#date').datepicker({
+    //     todayButton: new Date()
+    // });
 
     // ---------------------------------------------- //
     // Time picker initialization
     // ---------------------------------------------- //
-    $('.timepicker').timepicki();
+    // $('.timepicker').timepicki();
 
     // ---------------------------------------------- //
     // Time picker initialization
@@ -108,23 +108,23 @@ $(document).ready(function () {
     // ---------------------------------------------- //
     // Reservation Modal Opening & Closing
     // ---------------------------------------------- //
-    $('#open-reservation').click(function (e) {
-        e.preventDefault();
-        $('.reservation-overlay').fadeIn();
-        $('body').css({'overflow': 'hidden'});
+    // $('#open-reservation').click(function (e) {
+    //     e.preventDefault();
+    //     $('.reservation-overlay').fadeIn();
+    //     $('body').css({'overflow': 'hidden'});
 
-        setTimeout(function () {
-            $('#reservation-modal').addClass('is-visible');
-        }, 100);
-    });
+    //     setTimeout(function () {
+    //         $('#reservation-modal').addClass('is-visible');
+    //     }, 100);
+    // });
 
-    $('#close').click(function () {
-        $('.reservation-overlay').fadeOut();
-        setTimeout(function () {
-            $('body').css('overflow', 'auto');
-        }, 400);
-        $('#reservation-modal').removeClass('is-visible');
-    });
+    // $('#close').click(function () {
+    //     $('.reservation-overlay').fadeOut();
+    //     setTimeout(function () {
+    //         $('body').css('overflow', 'auto');
+    //     }, 400);
+    //     $('#reservation-modal').removeClass('is-visible');
+    // });
 
 
     // ---------------------------------------------- //
@@ -139,32 +139,32 @@ $(document).ready(function () {
     // ---------------------------------------------- //
     // Booking form validation
     // ---------------------------------------------- //
-    $('#booking-form, #booking-form-alternative').validate({
-        messages: {
-            name: 'please enter your name',
-            email: 'please enter your email address',
-            number: 'please enter your phone number',
-            people: 'please enter how many people',
-            date: 'please enter booking date',
-            time: 'please enter booking time',
-            request: 'please enter your special request'
-        }
-    });
+    // $('#booking-form, #booking-form-alternative').validate({
+    //     messages: {
+    //         name: 'please enter your name',
+    //         email: 'please enter your email address',
+    //         number: 'please enter your phone number',
+    //         people: 'please enter how many people',
+    //         date: 'please enter booking date',
+    //         time: 'please enter booking time',
+    //         request: 'please enter your special request'
+    //     }
+    // });
 
     // ---------------------------------------------- //
     // Modal booking form validation
     // ---------------------------------------------- //
-    $('#booking-form-alternative').validate({
-        messages: {
-            clientname: 'please enter your name',
-            clientemail: 'please enter your email address',
-            clientnumber: 'please enter your phone number',
-            clientpeople: 'please enter how many people',
-            clientdate: 'please enter booking date',
-            clienttime: 'please enter booking time',
-            clientrequest: 'please enter your special request'
-        }
-    });
+    // $('#booking-form-alternative').validate({
+    //     messages: {
+    //         clientname: 'please enter your name',
+    //         clientemail: 'please enter your email address',
+    //         clientnumber: 'please enter your phone number',
+    //         clientpeople: 'please enter how many people',
+    //         clientdate: 'please enter booking date',
+    //         clienttime: 'please enter booking time',
+    //         clientrequest: 'please enter your special request'
+    //     }
+    // });
 
 
     // ---------------------------------------------- //
@@ -219,5 +219,13 @@ $(document).ready(function () {
     })();
     Page.init();
 
+    // ---------------------------------------------- //
+    // LEAFLET
+    // ---------------------------------------------- //
+    var mymap = L.map('map').setView([47.2606774, 11.2631639,160], 17);
+    L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+    }).addTo(mymap);
 
 });

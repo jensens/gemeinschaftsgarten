@@ -440,12 +440,12 @@ section h4 {
 section h4 + p {
   line-height: 1.8em;
   font-size: 1.1em;
-  color: #777;
+  color: #555;
 }
 .lead {
   line-height: 1.9em;
   font-size: 1.25em;
-  color: #777;
+  color: #555;
 }
 /* ==========================================
    FORM COMPONENTS
@@ -493,15 +493,15 @@ form button {
 ========================================== */
 @media (max-width: 1370px) {
   section {
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
   nav.navbar {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 992px) {
   section {
-    font-size: 11px !important;
+    font-size: 15px !important;
   }
 }
 @media (max-width: 768px) {
@@ -794,7 +794,7 @@ section.content .box .icon {
 }
 section.content .box .icon i {
   font-size: 25px;
-  color: #b7b7b7;
+  color: #7f3901;
 }
 
 /* ==========================================
@@ -2190,7 +2190,7 @@ p {
   margin-bottom: 23px;
   line-height: 1.9em;
   font-size: 1.25em;
-  color: #777;
+  color: #555;
 }
 .text-small {
   font-size: 13px;

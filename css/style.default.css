@@ -9,16 +9,20 @@ Italiano By BootstrapTemple.com
 ========================================= */
 /* variant 1 - Default */
 @media (min-width: 768px) {
+  .navbar.shrink a.navbar-brand img {
+    width: 200px;
+    padding-top:  2px;
+  }
   .navbar.shrink {
-    min-height: 88px;
+    min-height: 60px;
   }
   .navbar.shrink .navbar-brand {
-    height: 87px;
+    height: 60px;
     padding: 6px 15px;
   }
   .navbar.shrink .navbar-btn {
-    margin-top: 18.5px;
-    margin-bottom: 18.5px;
+    margin-top: 12px;
+    margin-bottom: 1px;
   }
   .navbar.shrink .navbar-nav > li {
     float: left;
@@ -50,6 +54,12 @@ NAVBAR
   letter-spacing: 0.2em;
   color: #7fb401;
   padding-top: 2px;
+  padding-bottom:  15px;
+  width: 190px;
+}
+.navbar a.navbar-brand img {
+  width: 100%;
+  padding-top: 12px;
 }
 .navbar a.navbar-brand:focus,
 .navbar a.navbar-brand:hover {
@@ -72,6 +82,12 @@ NAVBAR
   }
 }
 @media (min-width: 768px) {
+  .navbar a.navbar-brand {
+    width: auto;
+  }
+  .navbar a.navbar-brand img{
+    width: 300px;
+  }
   .home .navbar-default {
     background-color: transparent;
   }
@@ -1458,7 +1474,7 @@ footer .copyrights p a:hover {
 /* navbar */
 .navbar {
   font-family: 'PT Serif', serif;
-  min-height: 100px;
+  min-height: 50px;
   margin-bottom: 0;
   border-top: none;
   border-bottom: none;
@@ -1477,12 +1493,19 @@ footer .copyrights p a:hover {
 .navbar-collapse.in {
   overflow-y: auto;
 }
+.navbar #navigation {
+  width: 40%;
+  margin-left: auto;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse {
     font-size: 13px;
   }
 }
 @media (min-width: 768px) {
+  .navbar #navigation {
+    width: auto;
+  }
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -1530,7 +1553,7 @@ footer .copyrights p a:hover {
   padding: 38.5px 15px;
   font-size: 19px;
   line-height: 23px;
-  height: 100px;
+  height: 50px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -1605,8 +1628,12 @@ footer .copyrights p a:hover {
   }
 }
 .navbar-btn {
-  margin-top: 31.5px;
-  margin-bottom: 31.5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.navbar-btn.action {
+  margin-top: 30px;
+  margin-bottom: 2px;
 }
 .navbar-btn.btn-sm {
   margin-top: 34.5px;

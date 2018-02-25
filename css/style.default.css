@@ -85,7 +85,10 @@ NAVBAR
   .navbar a.navbar-brand {
     width: auto;
   }
-  .navbar a.navbar-brand img{
+  .navbar a.navbar-brand {
+    height: 85px;
+  }
+  .navbar a.navbar-brand img {
     width: 300px;
   }
   .home .navbar-default {

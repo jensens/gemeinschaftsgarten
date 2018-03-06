@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|PT+Serif:400,400i,700');
-body {
- hyphens: auto;
+
+@media (max-width: 768px) {
+  body {
+   hyphens: auto;
+  }
 }
 /*
 =========================================

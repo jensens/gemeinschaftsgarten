@@ -562,6 +562,13 @@ section.hero .sl-slide .sl-slide-inner {
 section.hero .sl-slide .sl-slide-inner h1,
 section.hero .sl-slide .sl-slide-inner h2 {
   color: #fff;
+  background-color: rgba(0,0,0,0.3);
+}
+section.hero .sl-slide .sl-slide-inner h1 .text-primary,
+section.hero .sl-slide .sl-slide-inner h2 .text-primary {
+  background-color: rgba(255,255,255,0.7);
+  padding-left:  6px;
+  padding-right:  6px;
 }
 section.hero .sl-slide .sl-slide-inner h1 {
   font-size: 6.25em;
@@ -573,6 +580,7 @@ section.hero .sl-slide .sl-slide-inner p {
   font-size: 1.5em;
   max-width: 700px;
   line-height: 2.5em;
+  background-color: rgba(0,0,0,0.3);
 }
 section.hero .nav-dots span {
   background: #fff;
